@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Contact form</title>
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+
+  <form class="pad-t-2 pad-b-2 gutter" action="https://formspree.io/chan0373@algonquincollege.com" method="POST">
+    <div class="max-length">
+      <h3 class="push-0">Want to go to Mars?</h3><hr>
+      <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+
+      <fieldset>
+        <legend class="italic gutter-1-2 push-1-2">Personal details</legend>
+        <div class="push">
+          <label for="name">Name</label>
+          <input id="name" name="name">
+        </div>
+        <div class="push">
+          <label for="text">Age</label>
+          <input id="text" name="age">
+        </div>
+        <div class="push">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email">
+        </div>
+        <div class="push">
+          <label for="">Physical fitness</label>
+          <select id="subject" name="subject">
+            <option>Super-human</option>
+            <option>Fit as a fiddle</option>
+            <option>Not terribly strong</option>
+            <option>A little couch-potato-y</option>
+          </select>
+        </div>
+        <div class="">
+          <label for="address">Address</label>
+          <textarea id="address" name="message"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="italic gutter-1-2 text-left push-1-2">Mission statement</legend>
+        <div class="push">
+          <label for="reason">Why do you want to go to Mars?</label>
+          <textarea id="reason" name="reason"></textarea>
+        </div>
+        <div class="text-center">
+          <button class="btn bth-light" type="submit">Register for the trip!</button>
+        </div>
+        <div>
+          <input id="subject" value="Request to join the mission" type="hidden">
+        </div>
+      </fieldset>
+    </div>
+  </form>
+
+</body>
+</html>
